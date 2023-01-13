@@ -1,0 +1,148 @@
+body {
+  color: white;
+}
+
+/* Header Style */
+
+.header-container {
+  display: flex;
+  /* height: 70px; */
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+  background-image: url("https://images.unsplash.com/photo-1601574013379-a98bfb813376?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  color: white;
+  align-items: center;
+}
+
+h2 {
+  border-bottom: 2px solid white;
+}
+
+.lists-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.list {
+  list-style-type: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+#about {
+  margin: 0;
+}
+
+.login-container {
+  margin-top: 25px;
+  align-items: center;
+}
+#login {
+  margin-right: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#logo-img {
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* .Header Style */
+
+/* Section style */
+
+.section-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 16px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  color: black;
+}
+
+.cards {
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+p {
+  color: black;
+}
+
+#royal-img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* .Section style */
+
+/* footer style */
+
+footer {
+  margin-top: 20px;
+  color: black;
+  background-color: aquamarine;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.followus {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .footer style */
+
+@media screen and (max-width: 655px) {
+  .section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 580px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .lists-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .login-container {
+    margin-top: 0px;
+  }
+}
